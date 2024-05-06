@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Enhancer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="p-4">
+      <h1 class="text-xl font-bold mb-4">WhatsApp Enhancer</h1>
+      <div class="flex items-center space-x-4">
+        <input
+          type="text"
+          id="filterInput"
+          placeholder="Search chats..."
+          class="border rounded px-2 py-1 w-3/4"
+        />
+        <button
+          id="filterBtn"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Filter
+        </button>
+      </div>
+      <div id="chatList" class="mt-4">
+        <!-- Chat list will be populated dynamically -->
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
